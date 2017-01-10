@@ -1,0 +1,24 @@
+
+/* Class = "UIButton"; normalTitle = "Kannada"; ObjectID = "3dQ-Uv-ATv"; */
+"3dQ-Uv-ATv.normalTitle" = "Kannada";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "DeN-VW-7ZP"; */
+"DeN-VW-7ZP.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Qta-d4-1ZG"; */
+"Qta-d4-1ZG.normalTitle" = "Button";
+
+/* Class = "UISegmentedControl"; inn-EG-NQN.segmentTitles[0] = "First"; ObjectID = "inn-EG-NQN"; */
+"inn-EG-NQN.segmentTitles[0]" = "First";
+
+/* Class = "UISegmentedControl"; inn-EG-NQN.segmentTitles[1] = "Second"; ObjectID = "inn-EG-NQN"; */
+"inn-EG-NQN.segmentTitles[1]" = "Second";
+
+/* Class = "UIButton"; normalTitle = "English"; ObjectID = "kNZ-Ag-M4S"; */
+"kNZ-Ag-M4S.normalTitle" = "English";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "xdp-lb-wZd"; */
+"xdp-lb-wZd.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "zkA-ew-8hN"; */
+"zkA-ew-8hN.text" = "Label";
