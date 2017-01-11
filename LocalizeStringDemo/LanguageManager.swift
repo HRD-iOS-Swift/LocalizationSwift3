@@ -11,6 +11,7 @@ import Foundation
 class LanguageManager {
     // shared instance
     static let shared = LanguageManager()
+    static let languageCode = "LanguageCode"
     
     var availableLocales : [Locale]
     
@@ -26,14 +27,14 @@ class LanguageManager {
         set {
             // Convert user define class to Data for adding to UserDefaults
             let data = NSKeyedArchiver.archivedData(withRootObject: newValue)
-            UserDefaults.standard.set(data, forKey: "LanguageCode")
+            UserDefaults.standard.set(data, forKey: LanguageManager.languageCode)
             UserDefaults.standard.synchronize()
         }
         get {
             var selectedLocale : Locale? = nil
             
             // check if object of key LanguageCode availabel in UserDefaults or not
-            if let data = UserDefaults.standard.object(forKey: "LanguageCode") {
+            if let data = UserDefaults.standard.object(forKey: LanguageManager.languageCode) {
                 
                 // Decode object in UserDefaults to user define class back
                 let locale = NSKeyedUnarchiver.unarchiveObject(with: data as! Data) as! Locale

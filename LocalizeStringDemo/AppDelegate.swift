@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let languageManager = LanguageManager.shared
         
         // Check whether the language code has already been set.
-        if ((userDefaults.value(forKey: "LanguageCode")) == nil) {
+        if ((userDefaults.value(forKey: LanguageManager.languageCode)) == nil) {
             print("No language set - trying to find the right setting for the device locale.")
             
             // Iterate through available localisations to find the matching one for the device locale.
@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
             
             // If the device locale doesn't match any of the available ones, just pick the first one.
-            if (userDefaults.object(forKey: "LanguageCode") == nil) {
+            if (userDefaults.object(forKey: LanguageManager.languageCode) == nil) {
                 print("Couldn't find the right localisation - using default.")
                 languageManager.language = languageManager.availableLocales[0]
             }

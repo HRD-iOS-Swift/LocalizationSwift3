@@ -12,7 +12,7 @@ extension String {
     var localized: String {
         get {
             // check if object of key LanguageCode availabel in UserDefaults or not
-            if let data = UserDefaults.standard.object(forKey: "LanguageCode") {
+            if let data = UserDefaults.standard.object(forKey: LanguageManager.languageCode) {
                 // Decode object in UserDefaults to user define class back
                 let locale = NSKeyedUnarchiver.unarchiveObject(with: data as! Data) as! Locale
                 // Get currect languageCode
